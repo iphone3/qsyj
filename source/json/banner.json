@@ -1,0 +1,18 @@
+[
+	{
+		"id": 1,
+		"img": "http://www.api.qsyj.com/img/2019banner1.jpg"
+	},
+	{
+		"id": 2,
+		"img": "http://www.api.qsyj.com/img/2019banner2.jpg"
+	},
+	{
+		"id": 3,
+		"img": "http://www.api.qsyj.com/img/2019banner3.jpg"
+	},
+	{
+		"id": 4,
+		"img": "http://www.api.qsyj.com/img/2019banner4.jpg"
+	}
+]

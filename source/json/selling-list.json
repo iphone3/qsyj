@@ -1,0 +1,56 @@
+[	
+	{
+	"id": 1,
+	"img": "http://www.api.qsyj.com/img/2f_2.jpg",
+	"title": "强生define新美瞳日抛30片装",
+	"desc": "全新升级，改善滑片，轻薄三....",
+	"nowPrice": 179,
+	"oldPrice": 477,
+	"rebate": 8.8
+	},
+	{
+	"id": 2,
+	"img": "http://www.api.qsyj.com/img/2f_4.jpg",
+	"title": "强生define新美瞳日抛30片装",
+	"desc": "全新升级，改善滑片，轻薄三....",
+	"nowPrice": 211,
+	"oldPrice": 356,
+	"rebate": 8.9
+	},
+	{
+	"id": 3,
+	"img": "http://www.api.qsyj.com/img/2f_5.jpg",
+	"title": "强生define新美瞳日抛30片装",
+	"desc": "全新升级，改善滑片，轻薄三....",
+	"nowPrice": 133,
+	"oldPrice": 234,
+	"rebate": 8.8
+	},
+	{
+	"id": 4,
+	"img": "http://www.api.qsyj.com/img/2f_6.jpg",
+	"title": "强生define新美瞳日抛30片装",
+	"desc": "全新升级，改善滑片，轻薄三....",
+	"nowPrice": 54,
+	"oldPrice": 365,
+	"rebate": 8.8
+	},
+	{
+	"id": 5,
+	"img": "http://www.api.qsyj.com/img/2f_7.jpg",
+	"title": "强生define新美瞳日抛30片装",
+	"desc": "全新升级，改善滑片，轻薄三....",
+	"nowPrice": 179,
+	"oldPrice": 477,
+	"rebate": 8.8
+	},
+	{
+	"id": 6,
+	"img": "http://www.api.qsyj.com/img/3f_4.jpg",
+	"title": "强生define新美瞳日抛30片装",
+	"desc": "全新升级，改善滑片，轻薄三....",
+	"nowPrice": 179,
+	"oldPrice": 477,
+	"rebate": 8.8
+	}
+]

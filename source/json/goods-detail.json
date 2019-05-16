@@ -1,0 +1,125 @@
+{
+	"id": "30013",
+	"name": "博士伦-日抛彩色隐形眼镜 30片",
+	"desc":"凝结后的水气似雾又似冰，美的就像水晶即使平凡的花草树木，一旦被冰雾包裹，就成了动人的冰花、冰树。绮芙莉就是要为女性，带来比美丽更令人屏息的轻熟感精致瞳色。",
+	"banners":[
+		{
+			"id": 1,
+			"img": "http://www.api.qsyj.com/img/detail-banner1.png"
+		},
+		{
+			"id": 2,
+			"img": "http://www.api.qsyj.com/img/detail-banner2.png"
+		},
+		{
+			"id": 3,
+			"img": "http://www.api.qsyj.com/img/detail-banner3.png"
+		}
+	],
+	"newPrice": 358,
+	"oldPrice": 488,
+	"sale": 1,
+	"standardImages":[
+		{
+			"color": "魅力棕-黑色",
+			"img": "http://www.api.qsyj.com/img/img-d-c1.jpg"
+		},
+		{
+			"color": "棕色",
+			"img": "http://www.api.qsyj.com/img/img-d-c2.jpg"
+		},
+		{
+			"color": "灰色",
+			"img": "http://www.api.qsyj.com/img/img-d-c3.jpg"
+		}
+	],
+	"degree": [
+		"0.00", "-1.00","-1.50", "-2.00","-2.50","-3.00","-3.50","-4.00","-4.50","-5.00"
+	],
+	"explain":"假一赔十 | 7天无忧退货 | 满100免运费",
+	"appraise": {
+		"num": 4,
+		"rateScore": "98.7",
+		"list": [
+			{
+				"userImg": "http://www.api.qsyj.com/img/user_img1.jpg",
+				"name": "我很臭美",
+				"content": "朋友推荐的，很好看的颜色，上眼特别惊艳，自然粉色，舒适度也不错。",
+				"showImg": "http://www.api.qsyj.com/img/user_show1.jpg"
+			},
+			{
+				"userImg": "http://www.api.qsyj.com/img/user_img1.jpg",
+				"name": "叫我女王",
+				"content": "朋友推荐的，很好看的颜色，上眼特别惊艳，自然粉色，舒适度也不错。",
+				"showImg": "http://www.api.qsyj.com/img/user_show1.jpg"
+			},
+			{
+				"userImg": "http://www.api.qsyj.com/img/user_img1.jpg",
+				"name": "我很臭美",
+				"content": "朋友推荐的，很好看的颜色，上眼特别惊艳，自然粉色，舒适度也不错。",
+				"showImg": "http://www.api.qsyj.com/img/user_show1.jpg"
+			},
+			{
+				"userImg": "http://www.api.qsyj.com/img/user_img1.jpg",
+				"name": "我很臭美",
+				"content": "朋友推荐的，很好看的颜色，上眼特别惊艳，自然粉色，舒适度也不错。",
+				"showImg": "http://www.api.qsyj.com/img/user_show1.jpg"
+			}
+		]
+	},
+	"productMessage":[
+		{
+			"key":"材质",
+			"value":"甲基丙烯酸羟乙酯、乙二醇二甲基丙烯酸酯"
+		},
+		{
+			"key":"含水量",
+			"value":"55%"
+		},
+		{
+			"key":"保质期",
+			"value":"3年"
+		},
+		{
+			"key":"直径",
+			"value":"14.2mm"
+		},
+		{
+			"key":"基弧",
+			"value":"8.6mm"
+		},
+		{
+			"key":"中心厚度",
+			"value":"0.09mm（-3.00D时）"
+		},
+		{
+			"key":"包装规格",
+			"value":"2片/盒"
+		},
+		{
+			"key":"配戴周期",
+			"value":"月"
+		},
+		{
+			"key":"花色",
+			"value":"活力黑、印象棕、璀璨灰、酒红褐"
+		}
+	],
+	"productStamp":[
+		{
+			"stamp": "琉晶棕",
+			"text": "细腻的网点环状，简单却不失细节。精心调配的靓黑外圈，让眼眸深邃有神，内圈独特的裸肤棕映衬眼底，光感剔透更显双眸清透水润如琉晶。不用任何眼影，只贴合睫毛根部画出流畅眼线，眼尾微微上翘，涂抹有光泽和拉长效果的睫毛膏。清新又如水般的眼眸，柔和亲近感油然而生。",
+			"img": "http://www.api.qsyj.com/img/img-d4.png"
+		},
+		{
+			"stamp": "清幽蓝 ",
+			"text": "宝石般清澈的蓝，从层层暗色星云中扩散，渐渐氤氲成深邃灿烂的星河。花纹的渐层叠加，贴合着眼部自然纹路，带来通透变色效果，勾勒出闪亮星光眸。适当的加深眼周立体感，眼眸中蓝色的自然露出，宛若天生混血美目。即使是通勤装扮，也不用担心效果突兀。",
+			"img": "http://www.api.qsyj.com/img/img-d5.png"
+		},
+		{
+			"stamp": "活力黑",
+			"text": "深邃黑结合经典可可环打造自然放大的清新双眸。外环设计以集中瞳孔为焦点，围绕成双层闪耀星星环来营造出深邃感，第二层的甜美可可色糅合黑环，使配戴效果更有层次。不需要刻意的色彩和眼妆技巧，也能拥有元气神韵。",
+			"img": "http://www.api.qsyj.com/img/img-d6.png"
+		}
+	]
+}

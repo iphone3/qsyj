@@ -1,17 +1,20 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+		<!-- 使用组件 -->
+		<NavView></NavView>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+	// 第一步: 导入组件
+	import NavView from './components/NavView.vue'
+	
 export default {
   name: 'app',
   components: {
-    HelloWorld
+		// 第二步: 注册组件
+		NavView,
   }
 }
 </script>

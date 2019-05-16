@@ -1,0 +1,58 @@
+{
+	"bigImg1": "http://www.api.qsyj.com/img/2019banner4.jpg",
+	"bigImg2": "http://www.api.qsyj.com/img/2019banner2.jpg",
+	"winnowItems1":[
+		{
+				"name": "实用券攻略",
+				"desc": "礼盒券后直减130",
+				"img": "http://www.api.qsyj.com/img/2f_2.jpg"
+			},
+			{
+				"name": "神价热销榜",
+				"desc": "礼盒券后直减120",
+				"img": "http://www.api.qsyj.com/img/3f_4.jpg"
+			},
+			{
+				"name": "人气榜",
+				"desc": "礼盒券后直减120",
+				"img": "http://www.api.qsyj.com/img/2f_4.jpg"
+			},
+			{
+				"name": "眼镜课堂",
+				"desc": "礼盒券后直减120",
+				"img": "http://www.api.qsyj.com/img/2f_4.jpg"
+			},
+			{
+				"name": "护理妙招",
+				"desc": "礼盒券后直减120",
+				"img": "http://www.api.qsyj.com/img/2f_6.jpg"
+			}
+	],
+	"winnowItems2":[
+		{
+				"name": "实用券攻略",
+				"desc": "礼盒券后直减130",
+				"img": "http://www.api.qsyj.com/img/2f_2.jpg"
+			},
+			{
+				"name": "神价热销榜",
+				"desc": "礼盒券后直减120",
+				"img": "http://www.api.qsyj.com/img/3f_4.jpg"
+			},
+			{
+				"name": "人气榜",
+				"desc": "礼盒券后直减120",
+				"img": "http://www.api.qsyj.com/img/2f_4.jpg"
+			},
+			{
+				"name": "眼镜课堂",
+				"desc": "礼盒券后直减120",
+				"img": "http://www.api.qsyj.com/img/2f_4.jpg"
+			},
+			{
+				"name": "护理妙招",
+				"desc": "礼盒券后直减120",
+				"img": "http://www.api.qsyj.com/img/2f_6.jpg"
+			}
+	]
+}
