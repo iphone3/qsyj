@@ -6,7 +6,17 @@
 
 <script>
 	export default{
-		name:'mineView'
+		name:'mineView',
+		data() {
+			return {
+				title: '我的',
+				navViewShow: false
+			}
+		},
+		created() {
+			this.$emit('onTitle', this.title)
+			this.$emit('onNavShow', this.navViewShow)
+		}
 	}
 </script>
 

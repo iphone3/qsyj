@@ -6,7 +6,17 @@
 
 <script>
 	export default{
-		name:'searchView'
+		name:'searchView',
+		data() {
+			return {
+				title: '搜索',
+				navViewShow: false
+			}
+		},
+		created() {
+			this.$emit('onTitle', this.title)
+			this.$emit('onNavShow', this.navViewShow)
+		}
 	}
 </script>
 
