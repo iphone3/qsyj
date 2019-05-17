@@ -12,28 +12,35 @@
 		<router-view @onTitle='getTitle' @onNavShow='getShow'></router-view>
 
 		<!-- 底部通栏 -->
-		<TarbarView></TarbarView>
+		<van-tabbar v-model="active" active-color='red'>
+			<van-tabbar-item icon="home-o" to='/home'>首页</van-tabbar-item>
+			<van-tabbar-item icon="filter-o" to='/assort'>分类</van-tabbar-item>
+			<van-tabbar-item icon="search" to='/search'>搜索</van-tabbar-item>
+			<van-tabbar-item icon="cart-o" to='/cart' info="20">购物车</van-tabbar-item>
+			<van-tabbar-item icon="contact" to='/mine'>我的</van-tabbar-item>
+		</van-tabbar>
 	</div>
 </template>
 
 <script>
-	import NavView from './components/NavView/NavView.vue'
-	import TarbarView from './components/TarbarView/TarbarView.vue'
 	import {
-		NavBar
+		NavBar,
+		Tabbar, 
+		TabbarItem
 	} from 'vant';
 
 	export default {
 		name: 'app',
 		components: {
-			NavView,
-			TarbarView,
-			[NavBar.name]:NavBar
+			[NavBar.name]:NavBar,
+			[Tabbar.name]:Tabbar,
+			[TabbarItem.name]:TabbarItem
 		},
 		data() {
 			return {
 				title: '',	// 导航标题(子组件传递过来)
-				navViewShow: true 	// 导航显示或隐藏
+				navViewShow: true,// 导航显示或隐藏
+				active: 0
 			}
 		},
 		methods:{
