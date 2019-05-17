@@ -4,9 +4,8 @@
 		<NavView></NavView>
 
 		<!-- 主体内容 -->
-		<div class="content">
-			主体内容
-		</div>
+		<!-- 路由规则匹配到的组件 渲染位置 -->
+		<router-view></router-view>
 
 		<!-- 底部通栏 -->
 		<TarbarView></TarbarView>

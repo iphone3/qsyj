@@ -1,10 +1,11 @@
 <template>
 	<div class="tabbar-view">
-		<a href="#">首页</a>
-		<a href="#">分类</a>
-		<a href="#">搜索</a>
-		<a href="#">购物车</a>
-		<a href="#">我的</a>
+		<!-- 渲染成a标签 -->
+		<router-link to='/home'>首页</router-link>
+		<router-link to='/assort'>分类</router-link>
+		<router-link to='/search'>搜索</router-link>
+		<router-link to='/cart'>购物车</router-link>
+		<router-link to='/mine'>我的</router-link>
 	</div>
 </template>
 
@@ -16,16 +17,16 @@
 
 <style>
 	.tabbar-view{
-		height: 50px;
+		height: 3.125rem;
 		position: fixed;
 		bottom: 0;
-		border-top: 1px solid gray;
+		border-top: 0.0625rem solid gray;
 		width: 100%;
 	}
 	.tabbar-view a{
 		display: inline-block;
 		width: 20%;
 		text-align: center;
-		line-height: 50px;
+		line-height: 3.125rem;
 	}
 </style>
