@@ -1,29 +1,19 @@
-# qsyj
+# qsyj全视眼镜商城
 
-## Project setup
+## 安装依赖
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+## 项目启动
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 项目效果
+![首页](http://bluezyz.com/usr/uploads/2019/05/1619575125.png)
+![商品详情](http://bluezyz.com/usr/uploads/2019/05/4197779017.png)
+![分类](http://bluezyz.com/usr/uploads/2019/05/1131211529.png)
+![搜索](http://bluezyz.com/usr/uploads/2019/05/1901124895.png)
+![购物车](http://bluezyz.com/usr/uploads/2019/05/2163692759.png)
+![我的](http://bluezyz.com/usr/uploads/2019/05/4207222434.png)
