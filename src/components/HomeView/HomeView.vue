@@ -14,6 +14,7 @@
 		
 		<!-- 单品热卖 -->
 		<TitleView name='单品热卖' icon='star-o'></TitleView>
+		<SellingView></SellingView>
 		
 		<!-- 精选活动 -->
 		<TitleView name='精选活动' icon='gift-o'></TitleView>
@@ -30,6 +31,7 @@
 	} from 'vant';
 	import CategoryView from '../CategoryView/CategoryView.vue'
 	import TitleView from '../TitleView/TitleView.vue'
+	import SellingView from '../SellingView/SellingView.vue'
 
 	export default {
 		name: 'homeView',
@@ -37,7 +39,8 @@
 			[Swipe.name]: Swipe,
 			[SwipeItem.name]: SwipeItem,
 			CategoryView,
-			TitleView
+			TitleView,
+			SellingView
 		},
 		data() {
 			return {
