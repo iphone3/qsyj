@@ -11,6 +11,15 @@
 		
 		<!-- 分类 -->
 		<CategoryView></CategoryView>
+		
+		<!-- 单品热卖 -->
+		<TitleView name='单品热卖' icon='star-o'></TitleView>
+		
+		<!-- 精选活动 -->
+		<TitleView name='精选活动' icon='gift-o'></TitleView>
+		
+		<!-- 为你推荐 -->
+		<TitleView name='为你推荐' icon='label-o'></TitleView>
 	</div>
 </template>
 
@@ -20,13 +29,15 @@
 		SwipeItem
 	} from 'vant';
 	import CategoryView from '../CategoryView/CategoryView.vue'
+	import TitleView from '../TitleView/TitleView.vue'
 
 	export default {
 		name: 'homeView',
 		components: {
 			[Swipe.name]: Swipe,
 			[SwipeItem.name]: SwipeItem,
-			CategoryView
+			CategoryView,
+			TitleView
 		},
 		data() {
 			return {
@@ -60,5 +71,15 @@
 </script>
 
 <style>
-	@import url("../../temp.css");
+	.home-view {
+		padding-top: 2.8125rem;
+	}
+	
+	.home-view > .banner-view{
+		height: 9.875rem;
+	}
+	.home-view > .banner-view img{
+		width: 100%;
+		height: 100%;
+	}
 </style>
