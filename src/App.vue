@@ -50,7 +50,7 @@
 			getShow: function(temp){
 				this.navViewShow = temp
 			}
-		}
+		},
 	}
 </script>
 

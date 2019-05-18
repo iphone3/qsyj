@@ -5,7 +5,16 @@ import App from './App.vue'
 import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
+// Axios
+import Axios from 'axios'
+// Vue原型属性
+Vue.prototype.$ajax = Axios
+
 Vue.config.productionTip = false
+
+// 懒加载
+import { Lazyload } from 'vant';
+Vue.use(Lazyload);
 
 // 第二步: 导入组件
 import HomeView from './components/HomeView/HomeView.vue'
