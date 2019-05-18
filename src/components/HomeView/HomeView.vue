@@ -1,11 +1,16 @@
 <template>
 	<div class="home-view">
+		<!-- 轮播图 -->
 		<van-swipe :autoplay="3000" indicator-color="white" class='banner-view'>
-			<van-swipe-item v-for='item in banner'>
+			<van-swipe-item v-for='(item,index) in banner' :key="index">
 				<!-- <img :src="item.img" alt=""> -->
 				<img v-lazy='item.img'>
 			</van-swipe-item>
 		</van-swipe>
+		
+		
+		<!-- 分类 -->
+		<CategoryView></CategoryView>
 	</div>
 </template>
 
@@ -14,12 +19,14 @@
 		Swipe,
 		SwipeItem
 	} from 'vant';
+	import CategoryView from '../CategoryView/CategoryView.vue'
 
 	export default {
 		name: 'homeView',
 		components: {
 			[Swipe.name]: Swipe,
-			[SwipeItem.name]: SwipeItem
+			[SwipeItem.name]: SwipeItem,
+			CategoryView
 		},
 		data() {
 			return {

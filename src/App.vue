@@ -55,6 +55,10 @@
 </script>
 
 <style>
+	#app{
+		background: #f2f2f2;
+	}
+	
 	.van-nav-bar{
 		height: 2.8125rem;
 		background: red;
