@@ -13,7 +13,7 @@
 		
 		<!-- 单品热卖 -->
 		<TitleView name='单品热卖' icon='star-o'></TitleView>
-		<SellingView></SellingView>
+		<SellingView></SellingView> 
 		
 		<!-- 精选活动 -->
 		<TitleView name='精选活动' icon='gift-o'></TitleView>
@@ -22,6 +22,7 @@
 		
 		<!-- 为你推荐 -->
 		<TitleView name='为你推荐' icon='label-o'></TitleView>
+		<CommendView></CommendView>
 	</div>
 </template>
 
@@ -34,6 +35,7 @@
 	import TitleView from '../TitleView/TitleView.vue'
 	import SellingView from '../SellingView/SellingView.vue'
 	import WinnowView from '../WinnowView/WinnowView.vue'
+	import CommendView from '../CommendView/CommendView.vue'
 
 	export default {
 		name: 'homeView',
@@ -43,7 +45,8 @@
 			CategoryView,
 			TitleView,
 			SellingView,
-			WinnowView
+			WinnowView,
+			CommendView
 		},
 		data() {
 			return {
@@ -60,8 +63,6 @@
 			// 发送标题
 			this.$emit('onTitle', this.title)
 			this.$emit('onNavShow', this.navViewShow)
-
-			// console.log(this)
 			
 			var that = this
 			
@@ -86,8 +87,6 @@
 					
 					that.winnowBig2 = response.data.bigImg2
 					that.winnowContents2 = response.data.winnowItems2
-					
-					// console.log('精品--数据已经获取完成')
 				})
 				.catch(function(err){
 					console.log(err)
@@ -99,6 +98,7 @@
 <style>
 	.home-view {
 		padding-top: 2.8125rem;
+		padding-bottom: 2.8125rem;
 	}
 	
 	.home-view > .banner-view{

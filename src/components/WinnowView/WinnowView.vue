@@ -4,7 +4,7 @@
 		
 		<div class="hidden-view">
 			<div class="winnow-box" ref='itemsView'>
-				<WinnowItemView v-for='item in contents' :item='item'></WinnowItemView>
+				<WinnowItemView v-for='(item, index) in contents' :item='item' :key='index'></WinnowItemView>
 			</div>
 		</div>
 	</div>
@@ -25,7 +25,7 @@
 		beforeUpdate(){
 			var temp = this.contents.length * (100 + 10)
 			this.$refs.itemsView.style.width = temp + 'px'
-			// console.log('设置宽度')
+	
 		}
 		// mounted(){	// 为什么？
 		// 	// 获取对应 winnow-box 节点，动态设置宽度

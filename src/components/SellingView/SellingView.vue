@@ -1,6 +1,6 @@
 <template>
 	<div class="selling-view">
-		<GoodsItemView v-for='goods in sellings' :goods='goods'></GoodsItemView>
+		<GoodsItemView v-for='(goods, index) in sellings' :goods='goods' :key='index'></GoodsItemView>
 	</div>
 </template>
 
