@@ -42,13 +42,13 @@
 	}
 	
 	.goods-item-view > .title{
-		font-size: 13px;
+		font-size: 0.75rem;
 		color: black;
 		margin-bottom: 10px;
 	}
 	
 	.goods-item-view > .desc{
-		font-size: 12px;
+		font-size: 0.75rem;
 		color: #b4b4b4;
 		margin-bottom: 0.8125rem;
 	}
