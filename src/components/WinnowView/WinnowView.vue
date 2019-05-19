@@ -19,12 +19,21 @@
 		components: {
 			WinnowItemView
 		},
-		mounted(){
-			// 获取对应 winnow-box 节点，动态设置宽度
+		created(){
+			// console.log('Winnow组件创建')
+		},
+		beforeUpdate(){
 			var temp = this.contents.length * (100 + 10)
-			
 			this.$refs.itemsView.style.width = temp + 'px'
+			// console.log('设置宽度')
 		}
+		// mounted(){	// 为什么？
+		// 	// 获取对应 winnow-box 节点，动态设置宽度
+		// 	var temp = this.contents.length * (100 + 10)
+		// 	// 必须是DOM节点已经被渲染
+		// 	this.$refs.itemsView.style.width = temp + 'px'
+		// },
+		
 	}
 </script>
 

@@ -22,7 +22,6 @@
 		
 		<!-- 为你推荐 -->
 		<TitleView name='为你推荐' icon='label-o'></TitleView>
-		
 	</div>
 </template>
 
@@ -87,6 +86,8 @@
 					
 					that.winnowBig2 = response.data.bigImg2
 					that.winnowContents2 = response.data.winnowItems2
+					
+					// console.log('精品--数据已经获取完成')
 				})
 				.catch(function(err){
 					console.log(err)
