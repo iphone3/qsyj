@@ -18,7 +18,8 @@
 		methods:{
 			goodsItemClick: function(goodsId){
 				// 改变goodsDetailShow状态
-				this.$store.commit('changeGoodsDetailShow', goodsId)
+				this.$store.commit('changeGoodsDetailShow')
+				this.$store.commit('changeGoodsItemId', goodsId)
 			}
 		}
 	}

@@ -26,7 +26,7 @@
 		
 		
 		<!-- 商品详情 -->
-		<transition name='slide-to-top'>
+		<transition name='slide-to-left'>
 			<GoodsDetailView v-if='goodsDetailShow'></GoodsDetailView>
 		</transition>
 	</div>

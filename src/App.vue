@@ -71,17 +71,20 @@
 		color: white;
 	}
 	
+	.van-nav-bar .van-icon{
+		color: white;
+		font-size: 1rem;
+	} 
+	
 	
 	/* transition name='xxxx' 
-	
-	xxx-enter (进入)过渡开始状态
-	xxx-enter-to (进入)过渡结束的状态
-	xxx-enter-active (进入)过渡时间、延迟、曲线
-	 
-	xxx-leave (离开)过渡开始状态
-	xxx-leave-to (离开)过渡结束的状态
-	xxx-leave-active (离开)过渡时间、延迟、曲线
-	 */
+	* xxx-enter (进入)过渡开始状态
+	* xxx-enter-to (进入)过渡结束的状态
+	* xxx-enter-active (进入)过渡时间、延迟、曲线
+	* xxx-leave (离开)过渡开始状态
+	* xxx-leave-to (离开)过渡结束的状态
+	* xxx-leave-active (离开)过渡时间、延迟、曲线
+	*/
 	/* 从右边到左边 */
 	.slide-to-left-enter-active,
 	.slide-to-left-leave-active{

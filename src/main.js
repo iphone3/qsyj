@@ -28,8 +28,10 @@ var store = new Vuex.Store({
 		goodsItemId: 0
 	},
 	mutations:{	// 定义方法
-		changeGoodsDetailShow(state, goodsID){
+		changeGoodsDetailShow(state){
 			state.goodsDetailShow = !state.goodsDetailShow
+		},
+		changeGoodsItemId(state, goodsID){
 			state.goodsItemId = goodsID
 		}
 	}
