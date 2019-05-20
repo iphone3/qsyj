@@ -70,4 +70,38 @@
 	.van-nav-bar .van-nav-bar__title{
 		color: white;
 	}
+	
+	
+	/* transition name='xxxx' 
+	
+	xxx-enter (进入)过渡开始状态
+	xxx-enter-to (进入)过渡结束的状态
+	xxx-enter-active (进入)过渡时间、延迟、曲线
+	 
+	xxx-leave (离开)过渡开始状态
+	xxx-leave-to (离开)过渡结束的状态
+	xxx-leave-active (离开)过渡时间、延迟、曲线
+	 */
+	/* 从右边到左边 */
+	.slide-to-left-enter-active,
+	.slide-to-left-leave-active{
+		transition: all 2s;
+	}
+	
+	.slide-to-left-enter,
+	.slide-to-left-leave-to{
+		transform: translateX(100%);
+	}
+	
+	
+	/* 从底部到顶部 */
+	.slide-to-top-enter-active,
+	.slide-to-top-leave-active{
+		transition: all 2s;
+	}
+	
+	.slide-to-top-enter,
+	.slide-to-top-leave-to{
+		transform: translateY(100%);
+	}
 </style>

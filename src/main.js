@@ -16,6 +16,26 @@ Vue.config.productionTip = false
 import { Lazyload } from 'vant';
 Vue.use(Lazyload);
 
+
+// 状态管理Vuex
+import Vuex from 'vuex'
+Vue.use(Vuex)
+
+// 定义状态管理器
+var store = new Vuex.Store({
+	state:{	// 定义状态
+		goodsDetailShow: false,
+		goodsItemId: 0
+	},
+	mutations:{	// 定义方法
+		changeGoodsDetailShow(state, goodsID){
+			state.goodsDetailShow = !state.goodsDetailShow
+			state.goodsItemId = goodsID
+		}
+	}
+})
+
+
 // 第二步: 导入组件
 import HomeView from './components/HomeView/HomeView.vue'
 import AssortView from './components/AssortView/AssortView.vue'
@@ -61,5 +81,6 @@ var router = new VueRouter({
 new Vue({
   render: h => h(App),
 	// 第五步: 添加路由管理器
-	router
+	router,
+	store	// 状态管理器
 }).$mount('#app')

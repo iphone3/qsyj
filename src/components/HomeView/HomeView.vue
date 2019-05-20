@@ -23,6 +23,12 @@
 		<!-- 为你推荐 -->
 		<TitleView name='为你推荐' icon='label-o'></TitleView>
 		<CommendView></CommendView>
+		
+		
+		<!-- 商品详情 -->
+		<transition name='slide-to-top'>
+			<GoodsDetailView v-if='goodsDetailShow'></GoodsDetailView>
+		</transition>
 	</div>
 </template>
 
@@ -36,6 +42,7 @@
 	import SellingView from '../SellingView/SellingView.vue'
 	import WinnowView from '../WinnowView/WinnowView.vue'
 	import CommendView from '../CommendView/CommendView.vue'
+	import GoodsDetailView from '../GoodsDetailView/GoodsDetailView.vue'
 
 	export default {
 		name: 'homeView',
@@ -46,7 +53,8 @@
 			TitleView,
 			SellingView,
 			WinnowView,
-			CommendView
+			CommendView,
+			GoodsDetailView
 		},
 		data() {
 			return {
@@ -57,7 +65,14 @@
 				winnowContents1: [],
 				winnowBig2: '',
 				winnowContents2: [],
+				// goodsDetailShow: false
 			}
+		},
+		computed:{
+				goodsDetailShow(){
+					// 根据状态管理中
+					return this.$store.state.goodsDetailShow
+				}
 		},
 		created() {
 			// 发送标题
