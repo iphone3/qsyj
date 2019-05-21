@@ -7,6 +7,8 @@
 	width: 100%;
 	z-index: 99;
 	background: #f2f2f2;
+	overflow: auto;
+	padding-top: 2.8125rem;
 }
 
 .goods-detail-view>.banner img {
@@ -19,6 +21,7 @@
 	border: 0.0625rem #bbbbbb solid;
 	border-left: 0;
 	border-right: 0;
+	margin-bottom: 0.625rem;
 }
 .goods-detail-view > .content-view > .price-view{
 	height: 2.8125rem;
@@ -156,4 +159,41 @@
 	height: 2.5rem;
 	line-height: 2.5rem;
 }
+
+
+.goods-detail-view > .appraise-view{
+	background: white;
+	margin-bottom: 0.625rem;
+}
+.goods-detail-view > .appraise-view > .appraise-title{
+	padding: 0.8125rem 1.5625rem 0.8125rem 1.25rem;
+}
+
+.goods-detail-view > .appraise-view > .appraise-title > .title{
+	font-size: 0.875rem;
+	font-weight: 800;
+}
+.goods-detail-view > .appraise-view > .appraise-title > .rate-score{
+	color: red;
+	font-size: 0.875rem;
+	float: right;
+	vertical-align: middle;
+}
+.goods-detail-view > .appraise-view > .appraise-title > .rate-score > .icon{
+	color: #7C7C7C;
+	vertical-align: middle;
+}
+
+
+.goods-detail-view > .appraise-view > .appraise-content{
+	overflow: auto;
+	padding-left: 0.9375rem;
+	padding-bottom: 0.625rem;
+	margin-bottom: 0.625rem;
+}
+
+.goods-detail-view > .appraise-view > .appraise-content > .box{
+	overflow: hidden;
+}
+
 

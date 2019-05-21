@@ -1,7 +1,7 @@
 <template>
-	<div class="goods-detail-view">
+	<div class="goods-detail-view" v-if="goodsDetail">
 		<!-- 导航栏 -->
-		<van-nav-bar title="商品详情" left-arrow @click-left="onBack" />
+		<van-nav-bar fixed title="商品详情" left-arrow @click-left="onBack" />
 
 		<!-- 轮播图 -->
 		<van-swipe :autoplay="3000" class='banner'>
@@ -59,6 +59,25 @@
 				<van-icon name="arrow" class='icon' />
 			</div>
 		</div>
+	
+		<!-- 商品评价 -->
+		<div class="appraise-view">
+			<div class="appraise-title">
+				<span class="title">
+					商品评价({{goodsDetail.appraise.num}})
+				</span>
+				<span class="rate-score">
+					好评{{goodsDetail.appraise.rateScore}}%
+					<van-icon class='icon' name="arrow"></van-icon>
+				</span>
+			</div>
+			
+			<div class="appraise-content">
+				<div class="box" ref='scollView'>
+					<UserAppraiseView ref='userAppraise' v-for='(item, index) in goodsDetail.appraise.list' :key='index' :appraise='item'></UserAppraiseView>
+				</div>
+			</div>
+		</div>
 	</div>
 </template>
 
@@ -70,6 +89,7 @@
 		Stepper,
 		Icon
 	} from 'vant';
+	import UserAppraiseView from '../UserAppraiseView/UserAppraiseView.vue'
 
 	export default {
 		name: 'goodsDetailView',
@@ -78,7 +98,8 @@
 			[Swipe.name]: Swipe,
 			[SwipeItem.name]: SwipeItem,
 			[Stepper.name]: Stepper,
-			[Icon.name]: Icon
+			[Icon.name]: Icon,
+			UserAppraiseView
 		},
 		data() {
 			return {
@@ -90,6 +111,29 @@
 			onBack: function() {
 				this.$store.commit('changeGoodsDetailShow')
 			}
+		},
+		beforeUpdate() {
+			// vm.$nextTick 确保DOM已经渲染完成之后，再去做一些事情
+			this.$nextTick(function(){
+				// this.$refs.userAppraise[0] 组件
+				// vm.$el 组件中的 根DOM元素
+				console.log(this.$refs.userAppraise)
+				var userAppraise = this.$refs.userAppraise[0].$el 
+				
+				// 元素宽度
+				var width = userAppraise.offsetWidth
+				
+				// element.style 内联样式
+				// getComputedStyle 包括内联样式、嵌入样式、外部样式
+				var computedStyle = getComputedStyle(userAppraise, null)
+				
+				// 右间距
+				var marginR = parseInt(computedStyle.marginRight)
+				
+				// 动态计算
+				var temp = this.goodsDetail.appraise.list.length * (width + marginR * 2) + 'px'
+				this.$refs.scollView.style.width = temp
+			})
 		},
 		created() {
 			// 根据goodsID获取对应数据
