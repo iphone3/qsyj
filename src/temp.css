@@ -9,6 +9,7 @@
 	background: #f2f2f2;
 	overflow: auto;
 	padding-top: 2.8125rem;
+	padding-bottom: 3.125rem;
 }
 
 .goods-detail-view>.banner img {
@@ -244,4 +245,13 @@
 }
 .goods-detail-view > .product-view > .product-border > img{
 	width: 100%;
+}
+
+
+.goods-detail-view .van-button--warning{
+	background: black;
+	border-color: black;
+}
+.goods-detail-view .van-button--danger{
+	background: red;
 }

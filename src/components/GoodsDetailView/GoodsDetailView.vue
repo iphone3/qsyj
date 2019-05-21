@@ -100,6 +100,29 @@
 				<img :src="item.img" alt="">
 			</div>
 		</div>
+		
+		<!-- 商品导购 -->
+		<van-goods-action>
+		  <van-goods-action-mini-btn
+			icon="like-o"
+			text="收藏"
+			@click="onCollect"
+		  />
+		  <van-goods-action-mini-btn
+			icon="cart"
+			text="购物车"
+			@click="onCart"
+		  />
+		  <van-goods-action-big-btn
+			text="加入购物车"
+			@click="onAddCart"
+		  />
+		  <van-goods-action-big-btn
+			primary
+			text="立即购买"
+			@click="onBuy"
+		  />
+		</van-goods-action>
 	</div>
 </template>
 
@@ -109,7 +132,10 @@
 		Swipe,
 		SwipeItem,
 		Stepper,
-		Icon
+		Icon,
+		GoodsAction,
+		GoodsActionBigBtn,
+		GoodsActionMiniBtn
 	} from 'vant';
 	import UserAppraiseView from '../UserAppraiseView/UserAppraiseView.vue'
 
@@ -121,7 +147,10 @@
 			[SwipeItem.name]: SwipeItem,
 			[Stepper.name]: Stepper,
 			[Icon.name]: Icon,
-			UserAppraiseView
+			UserAppraiseView,
+			[GoodsAction.name]: GoodsAction,
+			[GoodsActionBigBtn.name]: GoodsActionBigBtn,
+			[GoodsActionMiniBtn.name]: GoodsActionMiniBtn,
 		},
 		data() {
 			return {
@@ -132,6 +161,18 @@
 		methods: {
 			onBack: function() {
 				this.$store.commit('changeGoodsDetailShow')
+			},
+			onCollect: function(){
+				console.log('收藏')
+			},
+			onCart: function(){
+				console.log('跳转到购物车')
+			},
+			onAddCart: function(){
+				console.log('添加到购物车')
+			},
+			onBuy: function(){
+				console.log('立即购买')
 			}
 		},
 		beforeUpdate() {
