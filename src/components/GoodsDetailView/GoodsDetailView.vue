@@ -78,6 +78,28 @@
 				</div>
 			</div>
 		</div>
+	
+		<!-- 产品信息 -->
+		<div class="product-view">
+			<h3>图文详情</h3>
+			<h4>产品信息</h4>
+			<table>
+				<tr v-for="(item, index) in goodsDetail.productMessage" :key='index'>
+					<td>{{item.key}}</td>
+					<td>{{item.value}}</td>
+				</tr>
+			</table>
+		</div>
+		
+		<!-- 产品印花 -->
+		<div class="product-view">
+			<h3>产品印花</h3>
+			<div class="product-border" v-for="(item, index) in goodsDetail.productStamp" :key='index'>
+				<h4>{{item.stamp}}</h4>
+				<p>{{item.text}}</p>
+				<img :src="item.img" alt="">
+			</div>
+		</div>
 	</div>
 </template>
 
@@ -117,7 +139,6 @@
 			this.$nextTick(function(){
 				// this.$refs.userAppraise[0] 组件
 				// vm.$el 组件中的 根DOM元素
-				console.log(this.$refs.userAppraise)
 				var userAppraise = this.$refs.userAppraise[0].$el 
 				
 				// 元素宽度
