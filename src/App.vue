@@ -55,6 +55,10 @@
 </script>
 
 <style>
+	body{
+		background: #f2f2f2;
+	}
+	
 	#app{
 		background: #f2f2f2;
 	}
