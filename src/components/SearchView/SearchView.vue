@@ -22,7 +22,7 @@
 		
 		
 		<!-- 搜索详情 -->
-		<SearchDetailView v-if='searchDetailShow' @onBack='onDetailHide'></SearchDetailView>
+		<SearchDetailView v-if='searchDetailShow' @onBack='onDetailHide' :searchDataList='searchDataList'></SearchDetailView>
 	</div>
 </template>
 
@@ -48,7 +48,8 @@
 					'海昌',
 					'隐形眼镜'
 				],
-				searchDetailShow: false
+				searchDetailShow: false,
+				searchDataList: null
 			}
 		},
 		created() {
@@ -57,10 +58,13 @@
 		},
 		methods:{
 			onSearch: function(){
-				this.searchDetail()
+				if(this.searchKey){
+					this.searchDetail()
+					this.historyList.push(this.searchKey)
+				}
 			},
 			onClear: function(){
-				console.log('清空')
+				this.historyList = []
 			},
 			onHistoryItem: function(item){
 				this.searchKey = item
@@ -87,9 +91,12 @@
 				// 搜索内容
 				// 参数: 搜索的关键字searchKey
 				console.log('搜索关键字: ' + this.searchKey)
+				var that = this
 				this.$ajax.get('/json/search-detail.json')
 					.then(function(response){	// 数据已经获取到
 						// console.log(response.data)
+						
+						that.searchDataList = response.data.list
 						
 						// 关闭轻提示
 						Toast.clear()
