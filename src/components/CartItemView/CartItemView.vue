@@ -44,7 +44,6 @@
 				this.$emit('onChangeChecked', this.checked, this.index)
 			},
 			onItemViewChange: function(checked){
-				console.log('父组件触发')
 				this.checked = checked
 			}
 		}
