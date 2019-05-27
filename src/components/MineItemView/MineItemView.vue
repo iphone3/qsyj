@@ -1,5 +1,5 @@
 <template>
-	<div class="mine-item-view">
+	<div class="mine-item-view" @click="onMineItemClick">
 		<van-icon class='icon' :name="icon" />
 		<p class="name">{{name}}</p>
 		<p class="other">{{other}}</p>
@@ -10,9 +10,14 @@
 	import { Icon } from 'vant';
 	export default{
 		name:'mineItemView',
-		props:['icon', 'name', 'other'],
+		props:['icon', 'name', 'other', 'type'],
 		components:{
 			[Icon.name]:Icon
+		},
+		methods:{
+			onMineItemClick: function(){
+				this.$emit('onOrderItemClick', this.type)
+			}
 		}
 	}
 </script>
