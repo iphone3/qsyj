@@ -138,5 +138,15 @@
 </script>
 
 <style>
-	@import url("../../temp.css");
+.cart-view{
+	padding-top: 2.8125rem;
+	padding-bottom: 6.25rem;
+	box-sizing: border-box;
+}
+.cart-view > .van-submit-bar{
+	bottom: 3.125rem;
+}
+.cart-view .all-checkbox{
+	margin-left: 0.9375rem;
+}
 </style>
