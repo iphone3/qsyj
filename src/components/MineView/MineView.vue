@@ -161,7 +161,6 @@
 			onOrderView: function(type){
 				this.orderViewShow = true
 				this.orderType = parseInt(type)
-				console.log(this.orderType)
 			},
 			onOrderViewHide: function(){
 				this.orderViewShow = false
