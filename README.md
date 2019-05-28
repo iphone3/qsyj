@@ -1,5 +1,20 @@
 # qsyj全视眼镜商城
 
+## 课程笔记内容
+```
+http://bluezyz.com/index.php/archives/111/
+```
+
+## 课程优惠链接
+[HTML&CSS课程($10)](https://www.udemy.com/web-htmlcss/?couponCode=ATOM2019_HTML)
+
+[JS课程($10)](https://www.udemy.com/web-javascript/?couponCode=ATOM2019_JS)
+
+[H5&C3课程($10)](https://www.udemy.com/draft/2151896/?couponCode=ATOM2019_H5_C3)
+
+[Vue实战项目 《全视眼镜商城》($10)](https://www.udemy.com/vue-qsyj/?couponCode=ATOM2019_VUE_QSYJ)
+
+
 ## 安装依赖
 ```
 npm install
