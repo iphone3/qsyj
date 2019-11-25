@@ -14,7 +14,12 @@ Vue.config.productionTip = false
 
 // 懒加载
 import { Lazyload } from 'vant';
-Vue.use(Lazyload);
+Vue.use(Lazyload);	
+
+// 国际化
+// import { Locale } from 'vant';
+// import zhTW from 'vant/lib/locale/lang/zh-TW';
+// Locale.use('zh-TW', zhTW);
 
 
 // 状态管理Vuex
